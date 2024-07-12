@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.task-management {
+  width: 60%;
+  height: 600px;
+  margin: 70px auto;
+  background-color: rgb(255, 227, 191);
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.task-management h2 {
+  padding: 10px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* margin-bottom: 10px; */
+}
+
+.tm-body {
+  width: 100%;
+  height: 34rem;
+  border-top: 3px solid black;
+  background-color: aliceblue;
+  padding-top: 1px;
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+}
+
+.tm-all-task,
+.tm-ongoing-task,
+.tm-done-task {
+  width: 33.2%;
+  height: 33.9rem;
+  /* background-color: rgb(255, 195, 165); */
+  border: 2px solid black;
+}
+
+.tm-head-panel {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tm-add-button {
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tm-add-task {
+  z-index: 1;
+  position: absolute;
+  width: 25%;
+  height: fit-content;
+  margin: 60px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 7px;
+  background-color: rgb(231, 255, 255);
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tm-add-task-body {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.tm-add-task-body-contents {
+  width: 250px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  border: none;
+}
+
+.tm-add-task-body button {
+  width: 50px;
+  font-weight: bold;
+  padding: 5px 7px;
+  margin-top: 15px;
+}
+
+.tm-all-task-contents,
+.tm-ongoing-task-contents,
+.tm-done-task-contents {
+  width: 90%;
+  height: fit-content;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+.tm-all-task-contents h2,
+.tm-ongoing-task-contents h2,
+.tm-done-task-contents h2 {
+  border-bottom: 2px solid black;
+}
+
+.tm-all-task-card,
+.tm-ongoing-task-card,
+.tm-done-task-card {
+  padding: 5px;
+  text-align: left;
+  border-radius: 5px;
+  background-color: aliceblue;
+  margin: 3px;
+  position: relative;
+}
+
+.fa-trash {
+  position: absolute;
+  right: 35px;
+  bottom: 40px;
+}
+
+
+.tm-all-task-card button,
+.tm-ongoing-task-card button,
+.tm-done-task-card button {
+  position: relative;
+  left: 160px;
+  bottom: 10px;
+  background-color: rgb(227, 227, 118);
+  border-radius: 5px;
+}
